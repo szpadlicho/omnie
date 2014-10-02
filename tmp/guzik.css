@@ -1,0 +1,51 @@
+[guz='guz2']{
+	float:left;
+	display:inline-block;
+	background:#4b82c5;
+	padding:10px 50px;
+	font-size:30px;
+	text-align:center;
+background: -moz-linear-gradient(top, #60a2d4 0%, #325eb7 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#60a2d4), color-stop(100%,#325eb7)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #60a2d4 0%,#325eb7 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #60a2d4 0%,#325eb7 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #60a2d4 0%,#325eb7 100%); /* IE10+ */
+background: linear-gradient(to bottom, #60a2d4 0%,#325eb7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60a2d4', endColorstr='#325eb7',GradientType=0 ); /* IE6-9 */
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	-o-border-radius:6px;
+	border-radius:6px;
+border:1px solid #264585;
+-webkit-box-shadow:0 1px 0 #9be0ef inset;
+-moz-box-shadow:0 1px 0 #9be0ef inset;
+-o-box-shadow:0 1px 0 #9be0ef inset;
+box-shadow:0 1px 0 #9be0ef inset;
+-webkit-box-shadow:0 1px 0 #9be0ef inset, 0 2px 1px rgba(0,0,0,0.3);
+-moz-box-shadow:0 1px 0 #9be0ef inset, 0 2px 1px rgba(0,0,0,0.3);
+-o-box-shadow:0 1px 0 #9be0ef inset, 0 2px 1px rgba(0,0,0,0.3);
+box-shadow:0 1px 0 #9be0ef inset, 0 2px 1px rgba(0,0,0,0.3);
+text-decoration:none;
+color:#1e376b;
+text-shadow:-1px 1px 0px #60a2d4;
+}
+[guz='guz2']:hover {
+background: #7bb2db; /* Old browsers */
+background: -moz-linear-gradient(top, #7bb2db 0%, #406ecb 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7bb2db), color-stop(100%,#406ecb)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #7bb2db 0%,#406ecb 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #7bb2db 0%,#406ecb 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #7bb2db 0%,#406ecb 100%); /* IE10+ */
+background: linear-gradient(to bottom, #7bb2db 0%,#406ecb 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bb2db', endColorstr='#406ecb',GradientType=0 ); /* IE6-9 */
+}
+[guz='guz2']:active {
+background: #325eb7;
+text-shadow:none;
+color:#172a50;
+-webkit-box-shadow:0 1px 0 #172a50 inset;
+-moz-box-shadow:0 1px 0 #172a50 inset;
+-o-box-shadow:0 1px 0 #172a50 inset;
+box-shadow:0 1px 4px #172a50 inset;
+padding:13px 50px 11px;
+}
