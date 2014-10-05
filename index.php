@@ -27,7 +27,7 @@
 	canvas{background-color:#000000;overflow:hidden}
 	</style>
 </head>
-<body onload="start()" onresize="resize()" onorientationchange="resize()" onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'; star_speed=15.5;" onmouseup="context.fillStyle='rgb(0,0,0)'; star_speed=0.5;">
+<body onload="start()" onresize="resize()" onorientationchange="resize()" onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'; star_speed=15.5;" onmouseup="frezz(2000)">
 <canvas id="starfield" style="background-color:#000000"></canvas>
 	<section id="place-holder">
 	<h1 class="hedha">Start</h1>

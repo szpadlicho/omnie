@@ -216,3 +216,10 @@ document.onmousemove=move;
 document.onkeypress=key_manager;
 document.onkeyup=release;
 document.onmousewheel=mouse_wheel; if(window.addEventListener) window.addEventListener('DOMMouseScroll',mouse_wheel,false);
+
+function frezz(time){
+    setTimeout(function() {
+            context.fillStyle='rgb(0,0,0)'; 
+            star_speed=0.5;
+    }, time);
+}
