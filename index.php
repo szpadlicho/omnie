@@ -27,9 +27,50 @@
 	body  {margin:0;padding:0;background-color:#000000;font-size:0;overflow:hidden}
 	canvas{background-color:#000000;overflow:hidden}
 	</style>
+    <style type="text/css">
+    body{
+        background-color:black;
+        font-size:16px;
+    }
+    @-webkit-keyframes animatedBackground {
+        from { background-position: 0 0; }
+        to { background-position: 100% 0; }
+    }
+    /*
+    @-webkit-keyframes animatedBackground {
+        from { -webkit-transform: translateX(0); }
+        to { -webkit-transform: translateX(100%); }
+    }
+    */
+    @keyframes animatedBackground {
+        from { background-position: 0 0; }
+        to { background-position: 100% 0; }
+    }
+    .planet {
+        #border: 1px solid red;
+        width:500px;
+        height:500px;
+        border-radius:50%;
+        #background-image: url(images/Galaxy.jpg);
+        background-image: url(images/earth_day5.jpg);
+        #mask: url(#masking);
+        background-size: auto 100%;
+        background-position: 0px 0px;
+        background-repeat: repeat;
+        -webkit-animation: animatedBackground 15s linear infinite ;
+        animation: animatedBackground 15s linear infinite ;
+        
+        -webkit-box-shadow: inset 0px 0px 54px 4px rgba(0,0,0,1);
+-moz-box-shadow: inset 0px 0px 54px 4px rgba(0,0,0,1);
+box-shadow: inset 0px 0px 54px 4px rgba(0,0,0,1);
+    }
+    .planet{
+        margin: 0 auto;
+        margin-top: 5em;
+    }
+	</style>
 </head>
 <body onload="start()" onresize="resize()" onorientationchange="resize()" onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'; star_speed=15.5;" onmouseup="frezz(2000)">
-<h1>Galaxy</h1>
     <canvas id="starfield" style="background-color:#000000"></canvas>
 	<section id="place-holder">
 		<div id="relative-holder">
@@ -50,7 +91,7 @@
 				</nav>
 			</header>
 			<article>
-
+                <div class="planet"></div>
 			</article>
 			<footer>
 				<div id="count"></div>
