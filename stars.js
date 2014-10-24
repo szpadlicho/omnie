@@ -1,11 +1,12 @@
 function $i(id) { return document.getElementById(id); }
+/*
 function $r(parent,child) { (document.getElementById(parent)).removeChild(document.getElementById(child)); }
 function $t(name) { return document.getElementsByTagName(name); }
 function $c(code) { return String.fromCharCode(code); }
 function $h(value) { return ('0'+Math.max(0,Math.min(255,Math.round(value))).toString(16)).slice(-2); }
 function _i(id,value) { $t('div')[id].innerHTML+=value; }
 function _h(value) { return !hires?value:Math.round(value/2); }
-
+*/
 function get_screen_size(){
     var w=document.documentElement.clientWidth;
     var h=document.documentElement.clientHeight;
@@ -16,7 +17,7 @@ var url=document.location.href;
 
 var flag=true;
 var test=true;
-var n=parseInt((url.indexOf('n=')!=-1)?url.substring(url.indexOf('n=')+2,((url.substring(url.indexOf('n=')+2,url.length)).indexOf('&')!=-1)?url.indexOf('n=')+2+(url.substring(url.indexOf('n=')+2,url.length)).indexOf('&'):url.length):5512);
+var n=parseInt((url.indexOf('n=')!=-1)?url.substring(url.indexOf('n=')+2,((url.substring(url.indexOf('n=')+2,url.length)).indexOf('&')!=-1)?url.indexOf('n=')+2+(url.substring(url.indexOf('n=')+2,url.length)).indexOf('&'):url.length):5512);// ilość gwiazd
 var w=0;
 var h=0;
 var x=0;
@@ -24,12 +25,12 @@ var y=0;
 var z=0;
 var star_color_ratio=0;
 var star_x_save,star_y_save;
-var star_ratio=256;
-var star_speed=0.5;
+var star_ratio=128;// dzielnik ilość gwiazd 2
+var star_speed=0.2;// prędkość 
 var star_speed_save=0;
 var star=new Array(n);
 var color;
-var opacity=0.1;
+var opacity=0.1;// rozmycie po kliknieciu
 
 var hyperspace=0;
 
@@ -52,7 +53,7 @@ var fps=0;
 
 function init()
 	{
-	var a=0;
+	//var a=0;
 	for(var i=0;i<n;i++)
 		{
 		star[i]=new Array(5);
@@ -64,8 +65,8 @@ function init()
 		}
 	var starfield=$i('starfield');
 	starfield.style.position='absolute';
-	starfield.width=w;
-	starfield.height=h;
+	starfield.width=w;// width screen with start
+	starfield.height=h;// height screen with start 
 	context=starfield.getContext('2d');
 	//context.lineCap='round';
 	context.fillStyle='rgb(0,0,0)';
@@ -74,9 +75,9 @@ function init()
 
 function anim()
 	{
-	//mouse_x=cursor_x-x;
+	//mouse_x=cursor_x-x;// kierunek po ruchu myszki
 	mouse_x=0;
-	//mouse_y=cursor_y-y;
+	//mouse_y=cursor_y-y;// kierunek po ruchu myszki
 	mouse_y=0;
 	if(hyperspace==1)
 		{
@@ -220,6 +221,6 @@ document.onmousewheel=mouse_wheel; if(window.addEventListener) window.addEventLi
 function frezz(time){
     setTimeout(function() {
             context.fillStyle='rgb(0,0,0)'; 
-            star_speed=0.5;
+            star_speed=0.1;// speed after release mouse button
     }, time);
 }
