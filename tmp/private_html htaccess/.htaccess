@@ -1,0 +1,18 @@
+#-----------------------------------
+#Nazwę „szpadlic.bdl.pl” zastąp nazwą swojej domeny.
+#Nazwę „omni” zastąp nazwą swojego podkatalogu.
+#Nazwę pliku „index.php” zastąp nazwą pliku startowego swojej witryny (np. index.php)
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^(www.)?propozycja.eu$ [NC]
+
+RewriteCond %{REQUEST_URI} !^/omnie/
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /omnie/$1
+
+RewriteCond %{HTTP_HOST} ^(www.)?propozycja.eu$ [NC]
+RewriteRule ^(/)?$ omnie/index.php [L]
+#--------------------------------------

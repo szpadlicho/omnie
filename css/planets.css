@@ -1,0 +1,56 @@
+/*
+@keyframes animatedBackground {
+    from { -webkit-transform: translateX(0); }
+    to { -webkit-transform: translateX(100%); }
+}
+*/
+@keyframes aniPlanets {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+.planets {
+    #border: 1px solid red;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background-image: url(../images/earth_day5.jpg);
+    background-size: auto 100%;
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    animation: aniPlanets 20s linear infinite ;
+    
+    -webkit-box-shadow: inset 0px 0px 54px 4px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 54px 4px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 54px 4px rgba(0,0,0,1);
+}
+.planets{
+    margin: 0 auto;
+    margin-top: 5em;
+}
+*{
+    border: 1px solid red;
+}
+#sun{
+    position:absolute;
+    top:8em;
+    left:0;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background-image: url(../images/slonce.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+}
+/*
+@keyframes obrot {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#sun{
+    animation-name: obrot;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+}
+*/

@@ -1,123 +1,12 @@
-/*--reset--*/
-html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/*--body--*/
 @font-face {
 	font-family:"moja";
 	src: url(../fonts/KGFaithHopeAndLove.ttf);
 }
 body {
  	background-color: black;
+    font-size:16px;
+    color:white;
 }
-/*******************************************************/
-a{
-	text-decoration:none;
-}
-header{
-}
-article{
-}
-footer{
-}
-/*------------------menu-begin------------------------*/
-#menu{
-	overflow:hidden;
-	width:500px;
-	margin:0px auto;
-	text-align:center;
-	margin-bottom:20px;
-}
-/*
-#nav > ul > li > a:link,nav > ul > li > a:visited, nav > ul > li > a:focus{
-	font-family: 'Titillium Web', "Titillium-thin", "Anaheim", "Segoe UI";
-	font-size: 32px;
-	font-weight:lighter;
-	color: rgba(255,255,255,0.8);
-	text-shadow: none;
-	-webkit-transition: 500ms linear 0s;
-	-moz-transition: 500ms linear 0s;
-	-o-transition: 500ms linear 0s;
-	transition: 500ms linear 0s;
-	outline: 0 none;
-	
-}
-#nav > ul > li > a:hover, nav > ul > li > a:active, nav > ul > li > a:focus{
-	color: rgba(255,255,255,1.0);
-	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
-}
-#nav ul li a.active, nav > ul > li > a.acive:focus{
-	color: rgba(255,255,255,1.0);	
-}
-#nav > ul > li > a.active {
-	display:block;
-	padding-right:5px;
-	background-color: rgba(159, 198, 5, 0.7);
-}
-/*
-/****/
-[class^="butt"]{
-	border:0px solid black;
-	margin-top:5px;
-	text-indent:0;
-	display:inline-block;
-	font-family:moja;
-	font-size:20px;
-	font-style:italic;
-	height:50px;
-	line-height:50px;
-	width:100px;
-	text-decoration:none;
-	text-align:center;
-	color:#fff;
-	text-shadow: none;
-	
-	-moz-box-shadow:inset 1px -1px 0px 0px #fff;
-	-webkit-box-shadow:inset 1px -1px 0px 0px #fff;
-	box-shadow:inset 1px -1px 0px 0px #fff;
-	
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #383538) );
-	background:-moz-linear-gradient( center top, #000000 5%, #383538 100% );
-	background-color:#383538;
-	
-	-webkit-border-radius:6px;
-	-moz-border-radius:6px;
-	border-radius:6px;
-	
-	-webkit-transition: 500ms linear 0s;
-	-moz-transition: 500ms linear 0s;
-	transition: 500ms linear 0s;
-}
-[class^="butt"]:hover {
-	color:yellow;	
-	border-left:2px solid red;
-	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px yellow;
-
-	-moz-box-shadow:inset 10px -1px 0px 0px yellow;
-	-webkit-box-shadow:inset 10px -1px 0px 0px yellow;
-	box-shadow:inset 10px -1px 0px 0px yellow;
-	
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #383538), color-stop(1, #000000) );
-	background:-moz-linear-gradient( center top, #383538 5%, #000000 100% );		
-	background-color:#000000;
-}
-[class^="butt"]:active {
-	top:1px;
-	color:red;
-	text-shadow: -1px 1px 8px darkred, 1px -1px 8px red;	
-	-moz-box-shadow:inset 10px -1px 0px 0px red;
-	-webkit-box-shadow:inset 10px -1px 0px 0px red;
-	box-shadow:inset 10px -1px 0px 0px red;
-}
-[id*="_span"]{
-    display:inline;
-}
-/*------------------body-begin------------------------*/
 #place-holder{
 	width:1000px;
 	min-height:600px;
@@ -128,27 +17,8 @@ footer{
 	top:0px;
 	left:0px;
 }
-h1 {
-	font-family: Arial;
-	font-size: 5em;
-	text-align: center;
-
-	background-image: url(../images/Galaxy.jpg);
-
-	-webkit-background-clip: text;
-	background-clip: text;
-
-	color: rgba(0,0,0,0);
-}
-/*------------------footer-begin------------------------*/
-#count, #count2{
-/* position:absolute;
-bottom:0px;
-display:none; 
-color:darkred; */
-}
 footer{
-position:fixed;
-bottom:0px;
-left:0px;
+    position:fixed;
+    bottom:0px;
+    left:0px;
 }

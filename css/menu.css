@@ -1,0 +1,63 @@
+#menu{
+	overflow:hidden;
+	width:500px;
+	margin:0px auto;
+	text-align:center;
+	margin-bottom:20px;
+}
+[class^="butt"]{
+	border:0px solid black;
+	margin-top:5px;
+	text-indent:0;
+	display:inline-block;
+	font-family:moja;
+	font-size:20px;
+	font-style:italic;
+	height:50px;
+	line-height:50px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	color:#fff;
+	text-shadow: none;
+	
+	-moz-box-shadow:inset 1px -1px 0px 0px #fff;
+	-webkit-box-shadow:inset 1px -1px 0px 0px #fff;
+	box-shadow:inset 1px -1px 0px 0px #fff;
+	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #383538) );
+	background:-moz-linear-gradient( center top, #000000 5%, #383538 100% );
+	background-color:#383538;
+	
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius:6px;
+	
+	-webkit-transition: 100ms linear 0s;
+	-moz-transition: 100ms linear 0s;
+	transition: 100ms linear 0s;
+}
+[class^="butt"]:hover {
+	color:yellow;	
+	border-left:2px solid red;
+	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px yellow;
+
+	-moz-box-shadow:inset 10px -1px 0px 0px yellow;
+	-webkit-box-shadow:inset 10px -1px 0px 0px yellow;
+	box-shadow:inset 10px -1px 0px 0px yellow;
+	
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #383538), color-stop(1, #000000) );
+	background:-moz-linear-gradient( center top, #383538 5%, #000000 100% );		
+	background-color:#000000;
+}
+[class^="butt"]:active {
+	top:1px;
+	color:red;
+	text-shadow: -1px 1px 8px darkred, 1px -1px 8px red;	
+	-moz-box-shadow:inset 10px -1px 0px 0px red;
+	-webkit-box-shadow:inset 10px -1px 0px 0px red;
+	box-shadow:inset 10px -1px 0px 0px red;
+}
+[id*="_div"]{
+    display:inline;
+}

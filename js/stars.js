@@ -26,7 +26,7 @@ var z=0;
 var star_color_ratio=0;
 var star_x_save,star_y_save;
 var star_ratio=128;// dzielnik ilość gwiazd 2
-var star_speed=0.2;// prędkość 
+var star_speed=0.4;// prędkość 
 var star_speed_save=0;
 var star=new Array(n);
 var color;
@@ -221,6 +221,6 @@ document.onmousewheel=mouse_wheel; if(window.addEventListener) window.addEventLi
 function frezz(time){
     setTimeout(function() {
             context.fillStyle='rgb(0,0,0)'; 
-            star_speed=0.1;// speed after release mouse button
+            star_speed=0.4;// speed after release mouse button
     }, time);
 }
