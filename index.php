@@ -27,6 +27,8 @@
                 var wtt = $(window).width();
                 $('#count').css({'color':'white'});
                 $('#count').text(wtt+'/'+htt);
+                // setup
+                $( '#relative-holder' ).css({'width':wtt+'px','height':htt+'px'});
             };
             $(document).ready(both);
             $(document).load(both);
@@ -35,37 +37,53 @@
     </head>
     <body onload="start()" onresize="resize()" onorientationchange="resize()" onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'; star_speed=15.5;" onmouseup="frezz(1000)">
         <canvas id="starfield" style="background-color:#000000"></canvas>
-        <section id="place-holder">
-            <div id="relative-holder">
-                <header>
-                    <nav id='menu'>
-                        <div id="home_div">
-                            <input class="button" type="button" value="Home"/>
-                        </div>
-                        <div id="aboutme_div">
-                            <input class="button" type="button" value="About Me"/>
-                        </div>
-                        <div id="links_div">
-                            <input class="button" type="button" value="Links"/>
-                        </div>
-                        <div id="contact_div">
-                            <input class="button" type="button" value="Contact"/>
-                        </div>
-                    </nav>
-                </header>
-                <article>
-                    <!--<div class="planets"></div>-->
-                    <div id="sun" class="planets_all"></div>
-                    <div id="" class="planets_all"></div>
-                    <div id="" class="planets_all"></div>
-                    <div id="" class="planets_all"></div>
-                    <div id="" class="planets_all"></div>
-                    <div id="" class="planets_all"></div>
-                </article>
-                <footer>
-                    <div id="count">asd</div>
-                </footer>
-            </div>
+        <section id="relative-holder">
+            <header>
+                <nav id='menu'>
+                    <div id="home_div">
+                        <input class="button" type="button" value="Home"/>
+                    </div>
+                    <div id="aboutme_div">
+                        <input class="button" type="button" value="About Me"/>
+                    </div>
+                    <div id="links_div">
+                        <input class="button" type="button" value="Links"/>
+                    </div>
+                    <div id="contact_div">
+                        <input class="button" type="button" value="Contact"/>
+                    </div>
+                </nav>
+            </header>
+            <article>
+                <!--<div class="planets"></div>-->
+                <!--
+                <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                -->
+                <div id="sun" class="planets_all"></div>
+                <div id="mercury" class="planets_all"></div>
+                <div id="venus" class="planets_all"></div>
+                <div id="earth" class="planets_all"></div>
+                <div id="mars" class="planets_all"></div>
+                <div id="jupiter" class="planets_all"></div>
+                <div id="saturn" class="planets_all"></div>
+                <div id="uranus" class="planets_all"></div>
+                <div id="neptune" class="planets_all"></div>
+            </article>
+            <footer>
+                <div id="count">asd</div>
+            </footer>
         </section>
     </body>
 </html>
