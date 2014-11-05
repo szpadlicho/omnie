@@ -26,10 +26,12 @@ header{
 	text-align:center;
 	color:#fff;
 	text-shadow: none;
-	
-	-moz-box-shadow:inset 1px -1px 0px 0px #fff;
-	-webkit-box-shadow:inset 1px -1px 0px 0px #fff;
-	box-shadow:inset 1px -1px 0px 0px #fff;
+    
+    border-bottom:2px solid red;
+    
+    -moz-box-shadow:inset 1px -3px 0px 0px yellow;
+	-webkit-box-shadow:inset 3px -1px 0px 0px yellow;
+	box-shadow:inset 1px -3px 0px 0px yellow;
 	
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #000000), color-stop(1, #383538) );
 	background:-moz-linear-gradient( center top, #000000 5%, #383538 100% );
@@ -45,12 +47,12 @@ header{
 }
 [class^="butt"]:hover {
 	color:yellow;	
-	border-left:2px solid red;
+	border-bottom: none;
 	text-shadow: -1px 1px 8px #ffc, 1px -1px 8px yellow;
 
-	-moz-box-shadow:inset 10px -1px 0px 0px yellow;
-	-webkit-box-shadow:inset 10px -1px 0px 0px yellow;
-	box-shadow:inset 10px -1px 0px 0px yellow;
+	-moz-box-shadow:inset 1px -1px 0px 0px #fff;
+	-webkit-box-shadow:inset 1px -1px 0px 0px #fff;
+	box-shadow:inset 1px -1px 0px 0px #fff;
 	
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #383538), color-stop(1, #000000) );
 	background:-moz-linear-gradient( center top, #383538 5%, #000000 100% );		
@@ -60,9 +62,10 @@ header{
 	top:1px;
 	color:red;
 	text-shadow: -1px 1px 8px darkred, 1px -1px 8px red;	
-	-moz-box-shadow:inset 10px -1px 0px 0px red;
-	-webkit-box-shadow:inset 10px -1px 0px 0px red;
-	box-shadow:inset 10px -1px 0px 0px red;
+    
+	-moz-box-shadow:inset 1px -3px 0px 0px red;
+	-webkit-box-shadow:inset 1px -3px 0px 0px red;
+	box-shadow:inset 1px -3px 0px 0px red;
 }
 [id*="_div"]{
     display:inline;

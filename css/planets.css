@@ -95,21 +95,21 @@
     height:0.7em;    
     background-image: url(../images/mercury.gif);
     left:5.5em;
-    animation: orbit-me 4s infinite linear 0ms;
+    animation: orbit-me 4s infinite linear -2s;
 }
 #venus{
     width:0.9em;
     height:0.9em;    
     background-image: url(../images/venus.gif);
     left:4em;
-    animation: orbit-ve 6s infinite linear 0ms;
+    animation: orbit-ve 6s infinite linear 0s;
 }
 #earth{
     width:1.4em;
     height:1.4em;    
     background-image: url(../images/earth.gif);
     left:8em;
-    animation: orbit-ea 8s infinite linear 0ms; /*ease-in-out*/
+    animation: orbit-ea 8s infinite linear -4s; /*ease-in-out*/
 }
 /*
 #earth:after{
@@ -130,7 +130,7 @@
     height:1.8em; 
     background-image: url(../images/mars.gif);
     left:9.5em;
-    animation: orbit-ma 10s infinite linear 0ms;
+    animation: orbit-ma 10s infinite linear -2s;
 }
 #jupiter{
     width:4em;
