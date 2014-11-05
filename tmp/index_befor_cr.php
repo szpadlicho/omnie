@@ -16,8 +16,7 @@
         <link title="deafult" type="text/css" rel="stylesheet" href="css/menu.css" />
         <link title="deafult" type="text/css" rel="stylesheet" href="css/planets.css" />
         
-        <!--<script src="http://code.jquery.com/jquery-1.9.1.js"></script>-->
-        <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script type="text/javascript" src="js/scrypt.js"></script>
         <script type="text/javascript" src="js/stars.js" ></script>
         <script type="text/javascript">
@@ -56,16 +55,31 @@
                 </nav>
             </header>
             <article>
-                <div id="sun" class="center">
-                    <div id="mercury" class="satellite"></div>
-                    <div id="venus" class="satellite"></div>
-                    <div id="earth" class="satellite"></div>
-                    <div id="mars" class="satellite"></div>
-                    <div id="jupiter" class="satellite"></div>
-                    <div id="saturn" class="satellite"></div>
-                    <div id="uranus" class="satellite"></div>
-                    <div id="neptune" class="satellite"></div>
-                </div>
+                <!--<div class="planets"></div>-->
+                <!--
+                <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                -->
+                <div id="sun" class="planets_all"></div>
+                <div id="mercury" class="planets_all"></div>
+                <div id="venus" class="planets_all"></div>
+                <div id="earth" class="planets_all"></div>
+                <div id="mars" class="planets_all"></div>
+                <div id="jupiter" class="planets_all"></div>
+                <div id="saturn" class="planets_all"></div>
+                <div id="uranus" class="planets_all"></div>
+                <div id="neptune" class="planets_all"></div>
             </article>
             <footer>
                 <div id="count">asd</div>

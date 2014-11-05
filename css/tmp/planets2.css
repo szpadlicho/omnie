@@ -1,0 +1,108 @@
+/*
+@keyframes animatedBackground {
+    from { -webkit-transform: translateX(0); }
+    to { -webkit-transform: translateX(100%); }
+}
+*/
+@keyframes aniPlanets {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+.planets {
+    #border: 1px solid red;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background-image: url(../images/earth_day5.jpg);
+    background-size: auto 100%;
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    animation: aniPlanets 20s linear infinite ;
+    
+    -webkit-box-shadow: inset 0px 0px 54px 4px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 54px 4px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 54px 4px rgba(0,0,0,1);
+    
+    margin: 0 auto;
+    margin-top: 5em;
+}
+.planets_all{
+    display:inline-block;
+    border-radius:50%;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    vertical-align:middle;
+    position: relative;
+    #position: absolute;
+}
+#sun{
+    margin-left:5em;
+    width:20em;
+    height:20em;
+    background-image: url(../images/sun.png);
+    left:35%;
+}
+#mercury{
+    margin-left:5em;
+    width:1em;
+    height:1em;    
+    background-image: url(../images/mercury.gif);
+}
+#venus{
+    margin-left:5em;
+    width:1.6em;
+    height:1.6em;    
+    background-image: url(../images/venus.gif);
+}
+#earth{
+    margin-left:5em;
+    width:1.6em;
+    height:1.6em;    
+    background-image: url(../images/earth.gif);
+    left:2em;
+    top:10em;
+}
+#mars{
+    margin-left:5em;
+    width:1.3em;
+    height:1.3em; 
+    background-image: url(../images/mars.gif);
+}
+#jupiter{
+    margin-left:5em;
+    width:4em;
+    height:4em;    
+    background-image: url(../images/jupiter.gif);
+}
+#saturn{
+    margin-left:5em;
+    width:9.5em;
+    height:5.2em;    
+    background-image: url(../images/saturn.gif);
+    background-size: auto 80%;
+}
+#uranus{
+    margin-left:5em;
+    width:2em;
+    height:2em;    
+    background-image: url(../images/uranus.gif);
+}
+#neptune{
+    margin-left:5em;
+    width:2em;
+    height:2em;    
+    background-image: url(../images/neptune.gif);
+}
+/*
+@keyframes obrot {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#sun{
+    animation-name: obrot;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+}
+*/
