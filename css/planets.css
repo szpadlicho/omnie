@@ -39,8 +39,9 @@
 }
 .center {
     position: relative;
-	left: 35%;
+	left: 40%;
     perspective: 57.5em;/*size satellite planet x*/
+    perspective-origin-x: 300px;/*?*/
 	transform: translateZ(1em);/*z-index transform*/
 	transform-style: preserve-3d;/*z-index transform in 3d*/
 }
@@ -48,110 +49,102 @@
 	position: absolute;
     top: 10em;
     z-index: -1;
-	transform: rotate3d(0, 1, 0, -89deg) translateX(18.75em);/* size planet half ?*/
+	transform: rotate3d(0, 1, 0, -93deg) translateX(100em);/*?*/
     visibility: hidden;
 }
+
 @keyframes orbit-me {
-    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(15.5em) rotate3d(0, 1, 0, 0deg); visibility: visible;}/*orbit size !*/
-    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(15.5em) rotate3d(0, 1, 0, -360deg); visibility: visible;}/*orbit size !*/
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(15.5em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(15.5em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
 }
 @keyframes orbit-ve {
-    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(20.5em) rotate3d(0, 1, 0, 0deg); visibility: visible;}/*orbit size !*/
-    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(20.5em) rotate3d(0, 1, 0, -360deg); visibility: visible;}/*orbit size !*/
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(20.5em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(20.5em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
 }
 @keyframes orbit-ea {
-    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(25.25em) rotate3d(0, 1, 0, 0deg); visibility: visible;}/*orbit size !*/
-    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(25.25em) rotate3d(0, 1, 0, -360deg); visibility: visible;}/*orbit size !*/
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(25.25em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(25.25em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
 }
 @keyframes orbit-ma {
-    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(30em) rotate3d(0, 1, 0, 0deg); visibility: visible;}/*orbit size !*/
-    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(30em) rotate3d(0, 1, 0, -360deg); visibility: visible;}/*orbit size !*/
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(30em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(30em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
 }
 @keyframes orbit-ju {
-    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(40em) rotate3d(0, 1, 0, 0deg); visibility: visible;}/*orbit size !*/
-    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(40em) rotate3d(0, 1, 0, -360deg); visibility: visible;}/*orbit size !*/
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(40em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(40em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
 }
 @keyframes orbit-sa {
-    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(50em) rotate3d(0, 1, 0, 0deg); visibility: visible;}/*orbit size !*/
-    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(50em) rotate3d(0, 1, 0, -360deg); visibility: visible;}/*orbit size !*/
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(50em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(50em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
 }
 @keyframes orbit-ur {
-    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(60em) rotate3d(0, 1, 0, 0deg); visibility: visible;}/*orbit size !*/
-    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(60em) rotate3d(0, 1, 0, -360deg); visibility: visible;}/*orbit size !*/
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(60em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(60em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
 }
 @keyframes orbit-ne {
-    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(60em) rotate3d(0, 1, 0, 0deg); visibility: visible;}/*orbit size !*/
-    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(60em) rotate3d(0, 1, 0, -360deg); visibility: visible;}/*orbit size !*/
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(60em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(60em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
 }
 #sun{
-    margin-left:5em;
     width:20em;
     height:20em;
     background-image: url(../images/sun.png);
 }
 #mercury{
-    margin-left:5em;
     width:1em;
     height:1em;    
     background-image: url(../images/mercury.gif);
-    left:4em;
+    left:12em;
     animation: orbit-me 4s infinite linear 0ms;
 }
 #venus{
-    margin-left:5em;
     width:1.6em;
     height:1.6em;    
     background-image: url(../images/venus.gif);
-    left:2em;
+    left:10em;
     animation: orbit-ve 6s infinite linear 0ms;
 }
 #earth{
-    margin-left:5em;
     width:1.6em;
     height:1.6em;    
     background-image: url(../images/earth.gif);
-    left:3.5em;
-    animation: orbit-ea 8s infinite linear 0ms;
+    left:8em;
+    animation: orbit-ea 8s infinite linear 0ms; /*ease-in-out*/
 }
 #mars{
-    margin-left:5em;
     width:1.3em;
     height:1.3em; 
     background-image: url(../images/mars.gif);
-    left:4.5em;
-    animation: orbit-ma 10s infinite linear 1000ms;
+    left:9.5em;
+    animation: orbit-ma 10s infinite linear 0ms;
 }
 #jupiter{
-    margin-left:5em;
     width:4em;
     height:4em;    
     background-image: url(../images/jupiter.gif);
-    left:4em;
-    animation: orbit-ju 12s infinite linear 1500ms;
+    left:8em;
+    animation: orbit-ju 12s infinite linear 0ms;
 }
 #saturn{
-    margin-left:5em;
     width:9.5em;
     height:5.2em;    
     background-image: url(../images/saturn.gif);
     background-size: auto 80%;
-    left:4em;
-    animation: orbit-sa 14s infinite linear 2000ms;
+    left:8em;
+    animation: orbit-sa 14s infinite linear 0ms;
 }
 #uranus{
-    margin-left:5em;
     width:2em;
     height:2em;    
     background-image: url(../images/uranus.gif);
-    left:4em;
+    left:8em;
     animation: orbit-ur 16s infinite linear 0ms;
 }
 #neptune{
-    margin-left:5em;
     width:2em;
     height:2em;    
     background-image: url(../images/neptune.gif);
-    left:4em;
+    left:8em;
     animation: orbit-ne 18s infinite linear 0ms;
 }
 /*
