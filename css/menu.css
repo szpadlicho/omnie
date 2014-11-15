@@ -24,6 +24,7 @@ header{
 	width:100px;
 	text-decoration:none;
 	text-align:center;
+    cursor:pointer;
 	color:#fff;
 	text-shadow: none;
     
@@ -66,7 +67,4 @@ header{
 	-moz-box-shadow:inset 1px -3px 0px 0px red;
 	-webkit-box-shadow:inset 1px -3px 0px 0px red;
 	box-shadow:inset 1px -3px 0px 0px red;
-}
-[id*="_div"]{
-    display:inline;
 }

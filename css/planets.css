@@ -28,31 +28,19 @@
     margin-top: 5em;
 }
 */
-.center, 
-.satellite{
-    display:inline-block;
-    border-radius:50%;
-    background-size: auto 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    vertical-align:middle; 
+/*
+@keyframes obrot {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
-.center {
-    position: relative;
-	left: 40%;
-    perspective: 57.5em;/*size satellite planet x*/
-    perspective-origin-x: 300px;/*?*/
-	transform: translateZ(1em);/*z-index transform*/
-	transform-style: preserve-3d;/*z-index transform in 3d*/
+#sun{
+    animation-name: obrot;
+    animation-duration: 10s;    
+    transition-timing-function: ease-in-out;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
 }
-.satellite {
-	position: absolute;
-    top: 10em;
-    z-index: -1;
-	transform: rotate3d(0, 1, 0, -93deg) translateX(100em);/*?*/
-    visibility: hidden;
-}
-
+*/
 @keyframes orbit-me {
     0% {transform: rotate3d(0, 1, 0, 0deg) translateX(15.5em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
     100% {transform: rotate3d(0, 1, 0, 360deg) translateX(15.5em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
@@ -85,7 +73,43 @@
     0% {transform: rotate3d(0, 1, 0, 0deg) translateX(60em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
     100% {transform: rotate3d(0, 1, 0, 360deg) translateX(60em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
 }
-#sun{
+.center, 
+.satellite{
+    display:inline-block;
+    border-radius:50%;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.center {
+    position: relative;
+	left: 0;
+    perspective: 57.5em;/*size satellite planet x*/
+    perspective-origin-x: 300px;/*?*/
+	transform: translateZ(1em);/*z-index transform*/
+	transform-style: preserve-3d;/*z-index transform in 3d*/
+    width:20em;
+    height:20em;
+}
+.satellite {
+	position: absolute;
+    top: 10em;
+    z-index: -1;
+	transform: rotate3d(0, 1, 0, -93deg) translateX(100em);/*?*/
+    visibility: hidden;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.zoom{
+    display:inline-block;
+    border-radius:50%;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    vertical-align:middle; 
+    position: absolute;
+}
+#sun{  
     width:20em;
     height:20em;
     background-image: url(../images/sun.png);
@@ -95,49 +119,45 @@
     height:0.7em;    
     background-image: url(../images/mercury.gif);
     left:5.5em;
-    animation: orbit-me 4s infinite linear -2s;
+    animation-name: orbit-me;
+    animation-duration: 4s;
+    animation-delay: -2s;  
 }
 #venus{
     width:0.9em;
     height:0.9em;    
     background-image: url(../images/venus.gif);
     left:4em;
-    animation: orbit-ve 6s infinite linear 0s;
+    animation-name: orbit-ve;
+    animation-duration: 6s;
+    animation-delay: 0s;
 }
 #earth{
     width:1.4em;
     height:1.4em;    
     background-image: url(../images/earth.gif);
     left:8em;
-    animation: orbit-ea 8s infinite linear -4s; /*ease-in-out*/
+    animation-name: orbit-ea;
+    animation-duration: 8s;
+    animation-delay: -4s;
 }
-/*
-#earth:after{
-    content:'- JA';
-    display:block;
-    position:absolute;
-    bottom:1.4em;
-    left:0.7em;
-    width:10em;
-    height:16em;
-    #border-top-left-radius: 40%;
-    border-left: 1px solid white;
-    #border-top: 1px solid white;
-}
-*/
 #mars{
     width:1.8em;
     height:1.8em; 
     background-image: url(../images/mars.gif);
     left:9.5em;
-    animation: orbit-ma 10s infinite linear -2s;
+    animation-name: orbit-ma;
+    animation-duration: 10s;
+    animation-delay: -3s;
 }
 #jupiter{
     width:4em;
     height:4em;    
     background-image: url(../images/jupiter.gif);
     left:8em;
-    animation: orbit-ju 12s infinite linear 0ms;
+    animation-name: orbit-ju;
+    animation-duration: 12s;
+    animation-delay: 0ms;
 }
 #saturn{
     width:9.5em;
@@ -145,31 +165,37 @@
     background-image: url(../images/saturn.gif);
     background-size: auto 80%;
     left:8em;
-    animation: orbit-sa 14s infinite linear 3000ms;
+    animation-name: orbit-sa;
+    animation-duration: 14s;
+    animation-delay: 3000ms;
 }
 #uranus{
     width:1.5em;
     height:1.5em;    
     background-image: url(../images/uranus.gif);
     left:8em;
-    animation: orbit-ur 16s infinite linear 5000ms;
+    animation-name: orbit-ur;
+    animation-duration: 16s;
+    animation-delay: 5000ms;
 }
 #neptune{
     width:1em;
     height:1em;    
     background-image: url(../images/neptune.gif);
     left:8em;
-    animation: orbit-ne 18s infinite linear 7000ms;
+    animation-name: orbit-ne;
+    animation-duration: 18s;
+    animation-delay: 7000ms;
 }
-/*
-@keyframes obrot {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.paused{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+    animation-play-state: paused;
 }
-#sun{
-    animation-name: obrot;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    transition-timing-function: ease-in-out;
+.running{
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -ms-animation-play-state: running;
+    animation-play-state: running;
 }
-*/

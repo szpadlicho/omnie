@@ -1,0 +1,41 @@
+@keyframes content-show-left {
+    0% { border:0em solid white; width:0; height:0; top:22em; left:20em; }
+    25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; left:20em; }
+    75% { border:0.3em solid white; width:35em; height:0.0em; top:22em; left:2em; }
+    100% { border:0.3em solid white; width:35em; height:40em; top:5em; left:2em; }
+}
+@keyframes content-show-right {
+    0% { border:0em solid white; width:0; height:0; top:22em; right:20em; }
+    25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; right:20em; }
+    75% { border:0.3em solid white; width:35em; height:0.0em; top:22em; right:2em; }
+    100% { border:0.3em solid white; width:35em; height:40em; top:5em; right:2em; }
+}
+.content{
+    position: absolute;
+    overflow:hidden;
+    text-align:center;
+}
+.show{
+    visibility:visible;
+}
+.hidden{
+    visibility:hidden;
+}
+.left-p{
+    border:0em solid white; width:0; height:0; top:22em; left:20em;
+    animation: content-show-left 600ms linear forwards 200ms;
+}
+.right-p{
+    border:0em solid white; width:0; height:0; top:22em; right:20em;
+    animation: content-show-right 600ms linear forwards 200ms;
+}
+/*
+.left-r{
+    border:0em solid white; width:0; height:0; top:22em; left:20em;
+    animation: content-show-left 600ms linear forwards reverse;
+}
+.right-r{
+    border:0em solid white; width:0; height:0; top:22em; right:20em;
+    animation: content-show-right 600ms linear forwards reverse;
+}
+*/

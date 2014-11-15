@@ -41,41 +41,45 @@
                 var size = parseInt($( 'body' ).css('font-size'));
                 $( '#home' ).click(function(){
                     $( '#earth, #jupiter, #saturn' ).removeClass( 'zoom' ).addClass( 'satellite' );
-                    $( '.satellite' ).removeClass( 'paused' ).addClass( 'running' );
-                    $( '#earth, #jupiter, #saturn, .center, .satellite' ).removeAttr( 'style' );;
+                    $( '.satellite' ).removeClass( 'paused' ).addClass( 'running' ).removeClass( 'up' ).addClass( 'back' );
+                    $( '.center' ).removeClass( 'sun-small' ).addClass( 'sun-back' );
+                    $( '#earth, #jupiter, #saturn' ).removeAttr( 'style' );;
 
                     $( '.content' ).removeClass( 'show right-p left-p' ).addClass( 'hidden' );
                 });
                 $( '#about' ).click(function(){
-                    if ( $( '#sun' ).hasClass('paused') ) {
+                    if ( $( '#sun' ).hasClass('sun-small') ) {
                         $( '#home' ).click();
                     }
                     $( '#earth' ).removeClass( 'satellite' ).addClass( 'zoom' );
-                    $( '.center, .satellite' ).removeClass( 'running' ).addClass( 'paused' ).css({'width':'0','heigh':'0'});
-                    $( '#earth' ).css({'left':'-20em', 'top':'-10em', 'width':'40em','height':'40em','transition':'300ms linear','animation-name':'none'});
+                    $( '.satellite' ).removeClass( 'running back' ).addClass( 'paused up' );
+                    $( '.center' ).removeClass( 'sun-back' ).addClass( 'sun-small' );
+                    $( '#earth' ).css({'left':'-20em', 'top':'-20em', 'width':'40em','height':'40em','transition':'300ms linear','animation-name':'none'});
                     
                     $( '#about-left' ).removeClass( 'hidden' ).addClass( 'show left-p' );
                     $( '#about-right' ).removeClass( 'hidden' ).addClass( 'show right-p' );
                     
                 });
                 $( '#links' ).click(function(){
-                    if ( $( '#sun' ).hasClass('paused') ) {
+                    if ( $( '#sun' ).hasClass('sun-small') ) {
                         $( '#home' ).click();
                     }
                     $( '#jupiter' ).removeClass( 'satellite' ).addClass( 'zoom' );
-                    $( '.center, .satellite' ).removeClass( 'running' ).addClass( 'paused' ).css({'width':'0','heigh':'0'});
-                    $( '#jupiter' ).css({'left':'-20em', 'top':'-10em', 'width':'40em','height':'40em','transition':'300ms linear','animation-name':'none'});
+                    $( '.satellite' ).removeClass( 'running back' ).addClass( 'paused up' );
+                    $( '.center' ).removeClass( 'sun-back' ).addClass( 'sun-small' );
+                    $( '#jupiter' ).css({'left':'-20em', 'top':'-20em', 'width':'40em','height':'40em','transition':'300ms linear','animation-name':'none'});
                     
                     $( '#links-left' ).removeClass( 'hidden' ).addClass( 'show left-p' );
                     $( '#links-right' ).removeClass( 'hidden' ).addClass( 'show right-p' );
                 });
                 $( '#contact' ).click(function(){
-                    if ( $( '#sun' ).hasClass('paused') ) {
+                    if ( $( '#sun' ).hasClass('sun-small') ) {
                         $( '#home' ).click();
                     }
                     $( '#saturn' ).removeClass( 'satellite' ).addClass( 'zoom' );
-                    $( '.center, .satellite' ).removeClass( 'running' ).addClass( 'paused' ).css({'width':'0','heigh':'0'});
-                    $( '#saturn' ).css({'left':'-20em', 'top':'-0em', 'width':'40em','height':'20em','transition':'300ms linear','animation-name':'none'});
+                    $( '.satellite' ).removeClass( 'running back' ).addClass( 'paused up' );
+                    $( '.center' ).removeClass( 'sun-back' ).addClass( 'sun-small' );
+                    $( '#saturn' ).css({'left':'-20em', 'top':'-10em', 'width':'40em','height':'20em','transition':'300ms linear','animation-name':'none'});
                     
                     $( '#contact-left' ).removeClass( 'hidden' ).addClass( 'show left-p' );
                     $( '#contact-right' ).removeClass( 'hidden' ).addClass( 'show right-p' );

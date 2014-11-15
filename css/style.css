@@ -1,10 +1,23 @@
+@media screen and (max-width: 2000px) {html,body{font-size:16px;}}
+@media screen and (max-width: 1900px) {html,body{font-size:15.5px;}}
+@media screen and (max-width: 1800px) {html,body{font-size:15px;}}
+@media screen and (max-width: 1700px) {html,body{font-size:14.5px;}}
+@media screen and (max-width: 1600px) {html,body{font-size:14px;}}
+@media screen and (max-width: 1500px) {html,body{font-size:13.5px;}}
+@media screen and (max-width: 1400px) {html,body{font-size:13px;}}
+@media screen and (max-width: 1300px) {html,body{font-size:12.5px;}}
+@media screen and (max-width: 1200px) {html,body{font-size:12px;}}
+@media screen and (max-width: 1100px) {html,body{font-size:11.5px;}}
+@media screen and (max-width: 1000px) {html,body{font-size:11px;}}
+@media screen and (max-width: 900px) {html,body{font-size:10.5px;}}
+@media screen and (max-width: 800px) {html,body{font-size:10px;}}
+@media screen and (max-width: 700px) {html,body{font-size:9.5px;}}
 @font-face {
 	font-family:"moja";
 	src: url(../fonts/KGFaithHopeAndLove.ttf);
 }
 body {
  	background-color: black;
-    font-size:16px;
     color:white;
 }
 #relative-holder{
@@ -13,6 +26,17 @@ body {
 	left:0px;
     display:table-cell;
     vertical-align:middle;
+    #border: 1px solid red;
+}
+article{
+    #border: 1px solid white;
+}
+.planet-place-holder{
+    #border: 1px solid yellow;
+    text-align:center;/*center sun*/
+}
+.content-place-holder{
+    #border: 1px solid pink;
 }
 footer{
     position:fixed;

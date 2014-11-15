@@ -1,0 +1,46 @@
+@keyframes content-show-left {
+    0% { border:0em solid white; width:0; height:0; top:22em; left:20em; }
+    25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; left:20em; }
+    75% { border:0.3em solid white; width:35em; height:0.0em; top:22em; left:2em; }
+    100% { border:0.3em solid white; width:35em; height:40em; top:5em; left:2em; }
+}
+@keyframes content-show-right {
+    0% { border:0em solid white; width:0; height:0; top:22em; right:20em; }
+    25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; right:20em; }
+    75% { border:0.3em solid white; width:35em; height:0.0em; top:22em; right:2em; }
+    100% { border:0.3em solid white; width:35em; height:40em; top:5em; right:2em; }
+}
+.content{
+    visibility:hidden;
+    overflow:hidden;
+}
+#home-left{
+    visibility:visible;
+    position: absolute;
+    /**/
+    #transition:1s linear;
+    border:0em solid white; width:0; height:0; top:22em; left:20em;
+    
+    /* border:0.3em solid white; width:0.1em; height:0.0em; top:22em; left:20em; */
+    
+    /* border:0.3em solid white; width:35em; height:0.0em; top:22em; left:2em; */
+
+    /* border:0.3em solid white; width:35em; height:40em; top:5em; left:2em; */
+    /**/
+    animation: content-show-left 500ms linear forwards ;
+}
+#home-right{
+    visibility:visible;
+    position: absolute;
+    /**/
+    #transition:1s linear;
+    border:0em solid white; width:0; height:0; top:22em; right:20em;
+    
+    /* border:0.3em solid white; width:0.1em; height:0.0em; top:22em; right:20em; */
+    
+    /* border:0.3em solid white; width:35em; height:0.0em; top:22em; right:2em; */
+
+    /* border:0.3em solid white; width:35em; height:40em; top:5em; right:2em; */
+    /**/
+    animation: content-show-right 500ms linear forwards ;
+}
