@@ -112,7 +112,7 @@
                     <div id="about-left" class="content left hidden" >
                         <h1>Witam</h1>
                         <p class="ak">
-                        Nazywam się Piotr Szpanelewski mam 32 lat i mieszkam w Częstochowie. Z wykształcenia jestem energoelektronikiem. Dotychczas zajmowałem się serwisem informatycznym, moderacją sklepów online, tworzeniem stron. Od zawsze pasjonowały mnie komputery i wszystkie zagadnienia z nimi związane. W ostatnich latach ukierunkowałem się w stronę szeroko pojętej sieci www. Bardzo dobrze znam kod HTML i CSS oraz jego możliwości, świetnie czuje się pisząc w języku PHP, potrafię również obsługiwać bazy danych MySQL. Poznałem w większym bądź mniejszym stopniu programy do tworzenia i obsługi stron www miedzy innymi takie jak : Photoshop, Flash, Fireworks . Bardzo dobrze znam środowisko Windows i cały czas poznaje coraz popularniejsze środowisko Linux. Osobiście uważam że nie ma lepszego spełnienia zawodowego jeśli człowiek może utrzymać się ze swojej pasji. Moją jest właśnie pisanie stron www i programów opartych na języku PHP. Poza tym lubię także dobre kino i niestandardowa kuchnie. W dziale "Projekty" znajdują się odnośniki do ostatnich moich projektów.</p>
+                        Nazywam się Piotr Szpanelewski mam 32 lat i mieszkam w Częstochowie. Z wykształcenia jestem energoelektronikiem. Dotychczas zajmowałem się serwisem informatycznym, moderacją sklepów online, tworzeniem stron. Od zawsze pasjonowały mnie komputery i wszystkie zagadnienia z nimi związane. W ostatnich latach ukierunkowałem się w stronę szeroko pojętej sieci www. Bardzo dobrze znam kod HTML i CSS oraz jego możliwości, nie jest mi obca biblioteka jQuery dla języka javaScript, świetnie czuje się pisząc w języku PHP, potrafię również obsługiwać bazy danych MySQL. Poznałem w większym bądź mniejszym stopniu programy do tworzenia i obsługi stron www miedzy innymi takie jak: Photoshop, Flash, Fireworks. Bardzo dobrze znam środowisko Windows i cały czas poznaje coraz popularniejsze środowisko Linux. Osobiście uważam że nie ma lepszego spełnienia zawodowego jeśli człowiek może utrzymać się ze swojej pasji. Moją jest właśnie pisanie stron www i programów opartych na języku PHP. Poza tym lubię także dobre kino i niestandardowa kuchnie. W dziale "Projekty" znajdują się odnośniki do ostatnich moich projektów.</p>
                         <br />
                         <p class="cn">Link do Curriculum vitae:</p>
                         <p class="cn"><a href="http://www.szpadlic.bdl.pl/PiotrSzpanelewskiCV.php" target="_blank" rel="next">Curriculum vitae</a></p>
@@ -134,8 +134,8 @@
                         <p class="cn"><a title="" target="_blank" href="http://www.meblefryzjerskie.info">Poradnik Meble fryzjerskie</a></p>
                         <p class="ak">Strona firmy High Hair prezentująca posiadany asortyment. Strona powstała przy współpracy z grafikiem.</p>
                         <p class="cn"><a title="" target="_blank" href="http://www.highhair.pl">High Hair</a></p>
-                        <p class="ak">Współpracowałem przy tworzeniu newslettera dla firmy HiHair. Strona powstała przy współpracy z grafikiem.</p>
-                        <p class="cn"><a title="" target="_blank" href="http://www.hihair.pl">HigHair.pl</a></p>
+                        <p class="ak">Współpracowałem przy tworzeniu bloga dla firmy HiHair. Strona powstała przy współpracy z grafikiem.</p>
+                        <p class="cn"><a title="" target="_blank" href="http://www.hihair.pl">HiHair.pl</a></p>
                         <p class="ak">Program do stworzenia forum.</p>
                         <p>Opcje użytkownika po wpisaniu w pole login: czegokolwiek. </p>
                         <p>Opcje administracyjne po wpisaniu w pole login: admin. </p>
