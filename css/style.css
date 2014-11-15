@@ -13,12 +13,14 @@
 @media screen and (max-width: 800px) {html,body{font-size:10px;}}
 @media screen and (max-width: 700px) {html,body{font-size:9.5px;}}
 @font-face {
-	font-family:"moja";
-	src: url(../fonts/KGFaithHopeAndLove.ttf);
+	font-family:"titi";
+	//src: url(../fonts/KGFaithHopeAndLove.ttf);
+	src: url(../fonts/Titillium/Titillium-Regular.otf);
 }
 body {
  	background-color: black;
     color:white;
+    font-family:titi;
 }
 #relative-holder{
 	position:relative;

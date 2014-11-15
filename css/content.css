@@ -13,7 +13,27 @@
 .content{
     position: absolute;
     overflow:hidden;
+    text-align:justify;
+    padding:0.5em;
+    background-color:rgba(255, 255, 255, 0.1);
+    #background-image:url('../images/cnbg.png');
+    color: orange;
+    font-weight:bold;
+}
+.content.right{
     text-align:center;
+}
+.ak{
+    text-indent:2em;
+}
+.cn{
+    text-align:center;
+}
+.content h1{
+    font-size:2em;
+}
+.content p{
+    font-size:1.2em;
 }
 .show{
     visibility:visible;
@@ -28,6 +48,10 @@
 .right-p{
     border:0em solid white; width:0; height:0; top:22em; right:20em;
     animation: content-show-right 600ms linear forwards 200ms;
+}
+.content a{
+    text-decoration:none;
+    color: yellow;
 }
 /*
 .left-r{

@@ -97,8 +97,6 @@
     z-index: -1;
 	transform: rotate3d(0, 1, 0, -93deg) translateX(100em);/*?*/
     visibility: hidden;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 .zoom{
     display:inline-block;
@@ -119,45 +117,35 @@
     height:0.7em;    
     background-image: url(../images/mercury.gif);
     left:5.5em;
-    animation-name: orbit-me;
-    animation-duration: 4s;
-    animation-delay: -2s;  
+    animation: orbit-me 4s linear infinite -2s running;
 }
 #venus{
     width:0.9em;
     height:0.9em;    
     background-image: url(../images/venus.gif);
     left:4em;
-    animation-name: orbit-ve;
-    animation-duration: 6s;
-    animation-delay: 0s;
+    animation: orbit-ve 6s linear infinite 0s running;
 }
 #earth{
     width:1.4em;
     height:1.4em;    
     background-image: url(../images/earth.gif);
     left:8em;
-    animation-name: orbit-ea;
-    animation-duration: 8s;
-    animation-delay: -4s;
+    animation: orbit-ea 8s linear infinite -4s running;
 }
 #mars{
     width:1.8em;
     height:1.8em; 
     background-image: url(../images/mars.gif);
     left:9.5em;
-    animation-name: orbit-ma;
-    animation-duration: 10s;
-    animation-delay: -3s;
+    animation: orbit-ma 10s linear infinite -3s running;
 }
 #jupiter{
     width:4em;
     height:4em;    
     background-image: url(../images/jupiter.gif);
     left:8em;
-    animation-name: orbit-ju;
-    animation-duration: 12s;
-    animation-delay: 0ms;
+    animation: orbit-ju 12s linear infinite 0ms running;
 }
 #saturn{
     width:9.5em;
@@ -165,37 +153,29 @@
     background-image: url(../images/saturn.gif);
     background-size: auto 80%;
     left:8em;
-    animation-name: orbit-sa;
-    animation-duration: 14s;
-    animation-delay: 3000ms;
+    animation: orbit-sa 14s linear infinite 3000ms running;
 }
 #uranus{
     width:1.5em;
     height:1.5em;    
     background-image: url(../images/uranus.gif);
     left:8em;
-    animation-name: orbit-ur;
-    animation-duration: 16s;
-    animation-delay: 5000ms;
+    animation: orbit-ur 16s linear infinite 5000ms running;
 }
 #neptune{
     width:1em;
     height:1em;    
     background-image: url(../images/neptune.gif);
     left:8em;
-    animation-name: orbit-ne;
-    animation-duration: 18s;
-    animation-delay: 7000ms;
+    animation: orbit-ne 18s linear infinite 7000ms running;
 }
 .paused{
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
-    -ms-animation-play-state: paused;
     animation-play-state: paused;
 }
 .running{
     -webkit-animation-play-state: running;
     -moz-animation-play-state: running;
-    -ms-animation-play-state: running;
     animation-play-state: running;
 }
