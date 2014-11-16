@@ -1,0 +1,201 @@
+/*
+@keyframes animatedBackground {
+    from { -webkit-transform: translateX(0); }
+    to { -webkit-transform: translateX(100%); }
+}
+*/
+/*
+@keyframes aniPlanets {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+.planets {
+    #border: 1px solid red;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background-image: url(../images/earth_day5.jpg);
+    background-size: auto 100%;
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    animation: aniPlanets 20s linear infinite ;
+    
+    -webkit-box-shadow: inset 0px 0px 54px 4px rgba(0,0,0,1);
+    -moz-box-shadow: inset 0px 0px 54px 4px rgba(0,0,0,1);
+    box-shadow: inset 0px 0px 54px 4px rgba(0,0,0,1);
+    
+    margin: 0 auto;
+    margin-top: 5em;
+}
+*/
+/*
+@keyframes obrot {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#sun{
+    animation-name: obrot;
+    animation-duration: 10s;    
+    transition-timing-function: ease-in-out;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+}
+*/
+@keyframes orbit-me {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(15.5em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(15.5em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@keyframes orbit-ve {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(20.5em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(20.5em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@keyframes orbit-ea {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(25.25em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(25.25em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@keyframes orbit-ma {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(30em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(30em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@keyframes orbit-ju {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(40em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(40em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@keyframes orbit-sa {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(50em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(50em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@keyframes orbit-ur {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(60em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(60em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@keyframes orbit-ne {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(60em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(60em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+.center, 
+.satellite{
+    display:inline-block;
+    border-radius:50%;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.center {
+    position: relative;
+	left: 0;
+    perspective: 57.5em;/*size satellite planet x*/
+    perspective-origin-x: 300px;/*?*/
+	transform: translateZ(1em);/*z-index transform*/
+	transform-style: preserve-3d;/*z-index transform in 3d*/
+    width:20em;
+    height:20em;
+}
+.satellite {
+	position: absolute;
+    top: 10em;
+    z-index: -1;
+	transform: rotate3d(0, 1, 0, -93deg) translateX(100em);/*?*/
+    visibility: hidden;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.zoom{
+    display:inline-block;
+    border-radius:50%;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    vertical-align:middle; 
+    position: absolute;
+}
+#sun{  
+    width:20em;
+    height:20em;
+    background-image: url(../images/sun.png);
+}
+#mercury{
+    width:0.7em;
+    height:0.7em;    
+    background-image: url(../images/mercury.gif);
+    left:5.5em;
+    animation-name: orbit-me;
+    animation-duration: 4s;
+    animation-delay: -2s;  
+}
+#venus{
+    width:0.9em;
+    height:0.9em;    
+    background-image: url(../images/venus.gif);
+    left:4em;
+    animation-name: orbit-ve;
+    animation-duration: 6s;
+    animation-delay: 0s;
+}
+#earth{
+    width:1.4em;
+    height:1.4em;    
+    background-image: url(../images/earth.gif);
+    left:8em;
+    animation-name: orbit-ea;
+    animation-duration: 8s;
+    animation-delay: -4s;
+}
+#mars{
+    width:1.8em;
+    height:1.8em; 
+    background-image: url(../images/mars.gif);
+    left:9.5em;
+    animation-name: orbit-ma;
+    animation-duration: 10s;
+    animation-delay: -3s;
+}
+#jupiter{
+    width:4em;
+    height:4em;    
+    background-image: url(../images/jupiter.gif);
+    left:8em;
+    animation-name: orbit-ju;
+    animation-duration: 12s;
+    animation-delay: 0ms;
+}
+#saturn{
+    width:9.5em;
+    height:5.2em;    
+    background-image: url(../images/saturn.gif);
+    background-size: auto 80%;
+    left:8em;
+    animation-name: orbit-sa;
+    animation-duration: 14s;
+    animation-delay: 3000ms;
+}
+#uranus{
+    width:1.5em;
+    height:1.5em;    
+    background-image: url(../images/uranus.gif);
+    left:8em;
+    animation-name: orbit-ur;
+    animation-duration: 16s;
+    animation-delay: 5000ms;
+}
+#neptune{
+    width:1em;
+    height:1em;    
+    background-image: url(../images/neptune.gif);
+    left:8em;
+    animation-name: orbit-ne;
+    animation-duration: 18s;
+    animation-delay: 7000ms;
+}
+.paused{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+    animation-play-state: paused;
+}
+.running{
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -ms-animation-play-state: running;
+    animation-play-state: running;
+}
