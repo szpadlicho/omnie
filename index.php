@@ -144,8 +144,8 @@
                         <p class="cn"><a title="" target="_blank" href="http://www.znak.szpadlic.bdl.pl">www.znak.szpadlic.bdl.pl</a></p>
                     </div>
                     <div id="links-right" class="content right hidden" >right-links</div>
-                    <div id="contact-left" class="content left hidden" >left-contact</div>
-                    <div id="contact-right" class="content right hidden" >right-contact</div>
+                    <div id="contact-left" class="content left hidden" >szpadlicho@gmail.com</div>
+                    <div id="contact-right" class="content right hidden" >kom. 88895877</div>
                 </div>
             </article>
             <footer>
