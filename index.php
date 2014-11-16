@@ -86,7 +86,7 @@
                     </div>
                     <div id="links-right" class="content right hidden">Podgląd</div>
                     <div id="contact-left" class="content left hidden" >szpadlicho@gmail.com</div>
-                    <div id="contact-right" class="content right hidden" >kom. 88895877</div>
+                    <div id="contact-right" class="content right hidden" >szpadlicho@gmail.com</div>
                 </div>
             </article>
             <footer>
