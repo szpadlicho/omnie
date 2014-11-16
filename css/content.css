@@ -19,6 +19,7 @@
     #background-image:url('../images/cnbg.png');
     color: orange;
     font-weight:bold;
+    #display:none;
 }
 .content.right{
     text-align:center;
@@ -63,3 +64,4 @@
     animation: content-show-right 600ms linear forwards reverse;
 }
 */
+
