@@ -6,7 +6,7 @@ var both = function () {
     var htt = $(window).height();
     var wtt = $(window).width();
     $('#count').css({'color':'white'});
-    $('#count').text(wtt+'/'+htt);
+    //$('#count').text(wtt+'/'+htt);
     // setup
     $( '#relative-holder' ).css({'width':wtt+'px','height':htt+'px'});
 };

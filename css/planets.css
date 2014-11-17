@@ -41,6 +41,70 @@
     animation-iteration-count: infinite;
 }
 */
+@-webkit-keyframes orbit-me {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(15.5em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(15.5em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-webkit-keyframes orbit-ve {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(20.5em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(20.5em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-webkit-keyframes orbit-ea {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(25.25em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(25.25em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-webkit-keyframes orbit-ma {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(30em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(30em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-webkit-keyframes orbit-ju {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(40em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(40em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-webkit-keyframes orbit-sa {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(50em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(50em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-webkit-keyframes orbit-ur {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(60em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(60em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-webkit-keyframes orbit-ne {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(60em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(60em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-moz-keyframes orbit-me {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(15.5em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(15.5em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-moz-keyframes orbit-ve {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(20.5em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(20.5em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-moz-keyframes orbit-ea {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(25.25em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(25.25em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-moz-keyframes orbit-ma {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(30em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(30em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-moz-keyframes orbit-ju {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(40em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(40em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-moz-keyframes orbit-sa {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(50em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(50em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-moz-keyframes orbit-ur {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(60em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(60em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
+@-moz-keyframes orbit-ne {
+    0% {transform: rotate3d(0, 1, 0, 0deg) translateX(60em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
+    100% {transform: rotate3d(0, 1, 0, 360deg) translateX(60em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
+}
 @keyframes orbit-me {
     0% {transform: rotate3d(0, 1, 0, 0deg) translateX(15.5em) rotate3d(0, 1, 0, 0deg); visibility: visible;}
     100% {transform: rotate3d(0, 1, 0, 360deg) translateX(15.5em) rotate3d(0, 1, 0, -360deg); visibility: visible;}
@@ -117,6 +181,8 @@
     height:0.7em;    
     background-image: url(../images/mercury.gif);
     left:5.5em;
+    -webkit-animation: orbit-me 4s linear infinite -2s running;
+    -moz-animation: orbit-me 4s linear infinite -2s running;
     animation: orbit-me 4s linear infinite -2s running;
 }
 #venus{
@@ -124,6 +190,8 @@
     height:0.9em;    
     background-image: url(../images/venus.gif);
     left:4em;
+    -webkit-animation: orbit-ve 6s linear infinite 0s running;
+    -moz-animation: orbit-ve 6s linear infinite 0s running;
     animation: orbit-ve 6s linear infinite 0s running;
 }
 #earth{
@@ -131,6 +199,8 @@
     height:1.4em;    
     background-image: url(../images/earth.gif);
     left:8em;
+    -webkit-animation: orbit-ea 8s linear infinite -4s running;
+    -moz-animation: orbit-ea 8s linear infinite -4s running;
     animation: orbit-ea 8s linear infinite -4s running;
 }
 #mars{
@@ -138,6 +208,8 @@
     height:1.8em; 
     background-image: url(../images/mars.gif);
     left:9.5em;
+    -webkit-animation: orbit-ma 10s linear infinite -3s running;
+    -moz-animation: orbit-ma 10s linear infinite -3s running;
     animation: orbit-ma 10s linear infinite -3s running;
 }
 #jupiter{
@@ -145,6 +217,8 @@
     height:4em;    
     background-image: url(../images/jupiter.gif);
     left:8em;
+    -webkit-animation: orbit-ju 12s linear infinite 0ms running;
+    -moz-animation: orbit-ju 12s linear infinite 0ms running;
     animation: orbit-ju 12s linear infinite 0ms running;
 }
 #saturn{
@@ -153,6 +227,8 @@
     background-image: url(../images/saturn.gif);
     background-size: auto 80%;
     left:8em;
+    -webkit-animation: orbit-sa 14s linear infinite 3000ms running;
+    -moz-animation: orbit-sa 14s linear infinite 3000ms running;
     animation: orbit-sa 14s linear infinite 3000ms running;
 }
 #uranus{
@@ -160,6 +236,8 @@
     height:1.5em;    
     background-image: url(../images/uranus.gif);
     left:8em;
+    -webkit-animation: orbit-ur 16s linear infinite 5000ms running;
+    -moz-animation: orbit-ur 16s linear infinite 5000ms running;
     animation: orbit-ur 16s linear infinite 5000ms running;
 }
 #neptune{
@@ -167,6 +245,8 @@
     height:1em;    
     background-image: url(../images/neptune.gif);
     left:8em;
+    -webkit-animation: orbit-ne 18s linear infinite 7000ms running;
+    -moz-animation: orbit-ne 18s linear infinite 7000ms running;
     animation: orbit-ne 18s linear infinite 7000ms running;
 }
 .paused{

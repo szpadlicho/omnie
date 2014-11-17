@@ -1,14 +1,38 @@
+@-webkit-keyframes content-show-left {
+    0% { border:0em solid white; width:0; height:0; top:22em; left:20em; }
+    25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; left:20em; }
+    75% { border:0.3em solid white; width:35em; height:0.0em; top:22em; left:2em; }
+    100% { border:0.3em solid white; width:35em; height:41em; top:5em; left:2em; }
+}
+@-moz-keyframes content-show-right {
+    0% { border:0em solid white; width:0; height:0; top:22em; right:20em; }
+    25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; right:20em; }
+    75% { border:0.3em solid white; width:35em; height:0.0em; top:22em; right:2em; }
+    100% { border:0.3em solid white; width:35em; height:41em; top:5em; right:2em; }
+}
 @keyframes content-show-left {
     0% { border:0em solid white; width:0; height:0; top:22em; left:20em; }
     25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; left:20em; }
     75% { border:0.3em solid white; width:35em; height:0.0em; top:22em; left:2em; }
-    100% { border:0.3em solid white; width:35em; height:40em; top:5em; left:2em; }
+    100% { border:0.3em solid white; width:35em; height:41em; top:5em; left:2em; }
+}
+@-webkit-keyframes content-show-right {
+    0% { border:0em solid white; width:0; height:0; top:22em; right:20em; }
+    25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; right:20em; }
+    75% { border:0.3em solid white; width:35em; height:0.0em; top:22em; right:2em; }
+    100% { border:0.3em solid white; width:35em; height:41em; top:5em; right:2em; }
+}
+@-moz-keyframes content-show-left {
+    0% { border:0em solid white; width:0; height:0; top:22em; left:20em; }
+    25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; left:20em; }
+    75% { border:0.3em solid white; width:35em; height:0.0em; top:22em; left:2em; }
+    100% { border:0.3em solid white; width:35em; height:41em; top:5em; left:2em; }
 }
 @keyframes content-show-right {
     0% { border:0em solid white; width:0; height:0; top:22em; right:20em; }
     25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; right:20em; }
     75% { border:0.3em solid white; width:35em; height:0.0em; top:22em; right:2em; }
-    100% { border:0.3em solid white; width:35em; height:40em; top:5em; right:2em; }
+    100% { border:0.3em solid white; width:35em; height:41em; top:5em; right:2em; }
 }
 .content{
     position: absolute;
@@ -16,10 +40,8 @@
     text-align:justify;
     padding:0.5em;
     background-color:rgba(255, 255, 255, 0.1);
-    #background-image:url('../images/cnbg.png');
     color: orange;
     font-weight:bold;
-    #display:none;
 }
 .content.right{
     text-align:center;
@@ -44,10 +66,14 @@
 }
 .left-p{
     border:0em solid white; width:0; height:0; top:22em; left:20em;
+    -webkit-animation: content-show-left 600ms linear forwards 200ms;
+    -moz-animation: content-show-left 600ms linear forwards 200ms;
     animation: content-show-left 600ms linear forwards 200ms;
 }
 .right-p{
     border:0em solid white; width:0; height:0; top:22em; right:20em;
+    -webkit-animation: content-show-right 600ms linear forwards 200ms;
+    -moz-animation: content-show-right 600ms linear forwards 200ms;
     animation: content-show-right 600ms linear forwards 200ms;
 }
 .content a{

@@ -14,7 +14,6 @@
 @media screen and (max-width: 700px) {html,body{font-size:9.5px;}}
 @font-face {
 	font-family:"titi";
-	//src: url(../fonts/KGFaithHopeAndLove.ttf);
 	src: url(../fonts/Titillium/Titillium-Regular.otf);
 }
 body {
@@ -28,20 +27,15 @@ body {
 	left:0px;
     display:table-cell;
     vertical-align:middle;
-    #border: 1px solid red;
-}
-article{
-    #border: 1px solid white;
 }
 .planet-place-holder{
-    #border: 1px solid yellow;
     text-align:center;/*center sun*/
-}
-.content-place-holder{
-    #border: 1px solid pink;
 }
 footer{
     position:fixed;
     bottom:0px;
     left:0px;
+}
+#sound, #sound_player{
+    visibility:hidden;
 }

@@ -18,21 +18,72 @@
         <link title="deafult" type="text/css" rel="stylesheet" href="css/content.css" />
         
         <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="js/stars.js" ></script>
         <script type="text/javascript" src="js/scrypt.js"></script>
+        <script type="text/javascript" src="js/stars.js" ></script>
 
         <script type="text/javascript">
-            // $(document).ready( function() {
-                // $('.button').click(function(){
-                    // //$('#sound').append('<embed id="sound_player" src="sounds/fly.mp3" autostart="true" hidden="true"></embed>');
-                // });
-            // });
-            $(document).ready(function() {
-                var audioElement = document.createElement('audio');
-                audioElement.setAttribute('src', 'sounds/fly.mp3');
-                $('.button').click(function() {
-                    audioElement.play();
-                    //audioElement.pause();
+            /*długość okna przegladarki*/
+            var both = function () {
+                // debugger
+                var htt = $(window).height();
+                var wtt = $(window).width();
+                $('#count').css({'color':'white'});
+                $('#count').text(wtt+'/'+htt);
+                // setup
+                $( '#relative-holder' ).css({'width':wtt+'px','height':htt+'px'});
+            };
+            $(document).ready(both);
+            $(document).load(both);
+            $(window).resize(both);
+            $(document).ready(function(){
+                var center_ratio = 40;
+                var satellite_ratio = 10;
+                var size = parseInt($( 'body' ).css('font-size'));
+                $( '#home' ).click(function(){
+                    $( '#earth, #jupiter, #saturn' ).removeClass( 'zoom' ).addClass( 'satellite' );
+                    $( '.satellite' ).removeClass( 'paused' ).addClass( 'running' );
+                    $( '#earth, #jupiter, #saturn, .center, .satellite' ).removeAttr( 'style' );
+
+                    $( '.content' ).removeClass( 'show right-p left-p' ).addClass( 'hidden' );
+                });
+                $( '#about' ).click(function(){
+                    if ( $( '#sun' ).hasClass('paused') ) {
+                        $( '#home' ).click();
+                    }
+                    $( '#earth' ).removeClass( 'satellite' ).addClass( 'zoom' );
+                    $( '.center, .satellite' ).removeClass( 'running' ).addClass( 'paused' ).css({'width':'0','heigh':'0'});
+                    $( '#earth' ).css({'left':'-20em', 'top':'-10em', 'width':'40em','height':'40em','transition':'300ms linear','animation-name':'none'});
+                    
+                    $( '#about-left' ).removeClass( 'hidden' ).addClass( 'show left-p' );
+                    $( '#about-right' ).removeClass( 'hidden' ).addClass( 'show right-p' );
+                    
+                });
+                $( '#links' ).click(function(){
+                    if ( $( '#sun' ).hasClass('paused') ) {
+                        $( '#home' ).click();
+                    }
+                    $( '#jupiter' ).removeClass( 'satellite' ).addClass( 'zoom' );
+                    $( '.center, .satellite' ).removeClass( 'running' ).addClass( 'paused' ).css({'width':'0','heigh':'0'});
+                    $( '#jupiter' ).css({'left':'-20em', 'top':'-10em', 'width':'40em','height':'40em','transition':'300ms linear','animation-name':'none'});
+                    
+                    $( '#links-left' ).removeClass( 'hidden' ).addClass( 'show left-p' );
+                    $( '#links-right' ).removeClass( 'hidden' ).addClass( 'show right-p' );
+                });
+                $( '#contact' ).click(function(){
+                    if ( $( '#sun' ).hasClass('paused') ) {
+                        $( '#home' ).click();
+                    }
+                    $( '#saturn' ).removeClass( 'satellite' ).addClass( 'zoom' );
+                    $( '.center, .satellite' ).removeClass( 'running' ).addClass( 'paused' ).css({'width':'0','heigh':'0'});
+                    $( '#saturn' ).css({'left':'-20em', 'top':'-0em', 'width':'40em','height':'20em','transition':'300ms linear','animation-name':'none'});
+                    
+                    $( '#contact-left' ).removeClass( 'hidden' ).addClass( 'show left-p' );
+                    $( '#contact-right' ).removeClass( 'hidden' ).addClass( 'show right-p' );
+                });
+                /**/
+                $( '.project-link' ).hover(function(){
+                    var url = $(this).attr( 'href' );
+                    $( '#links-right' ).html( '<object width="100%" height="100%" type="text/html" data="'+url+'"/>' );
                 });
             });
 
@@ -43,10 +94,10 @@
         <section id="relative-holder">
             <header>
                 <nav id='menu' onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'; star_speed=15.5;" onmouseup="frezz(200)">
-                    <a id="home" class="button">Start</a>
-                    <a id="about" class="button">O mnie</a>
-                    <a id="links" class="button">Projekty</a>
-                    <a id="contact" class="button">Kontakt</a>
+                    <a id="home" class="button">Home</a>
+                    <a id="about" class="button">About Me</a>
+                    <a id="links" class="button">Projects</a>
+                    <a id="contact" class="button">Contact</a>
                 </nav>
             </header>
             <article>
@@ -66,7 +117,7 @@
                     <div id="about-left" class="content left hidden" >
                         <h1>Witam</h1>
                         <p class="ak">
-                        Nazywam się Piotr Szpanelewski urodziłem się w 1983 roku i mieszkam w Częstochowie. Z wykształcenia jestem energoelektronikiem. Dotychczas zajmowałem się serwisem informatycznym, moderacją sklepów online, tworzeniem stron. Od zawsze pasjonowały mnie komputery i wszystkie zagadnienia z nimi związane. W ostatnich latach ukierunkowałem się w stronę szeroko pojętej sieci www. Bardzo dobrze znam kod HTML i CSS oraz jego możliwości, nie jest mi obca biblioteka jQuery dla języka javaScript, świetnie czuje się pisząc w języku PHP, potrafię również obsługiwać bazy danych MySQL. Poznałem w większym bądź mniejszym stopniu programy do tworzenia i obsługi stron www miedzy innymi takie jak: Photoshop, Flash, Fireworks. Bardzo dobrze znam środowisko Windows i cały czas poznaje coraz popularniejsze środowisko Linux. Osobiście uważam że nie ma lepszego spełnienia zawodowego jeśli człowiek może utrzymać się ze swojej pasji. Moją jest właśnie pisanie stron www i programów opartych na języku PHP. Poza tym lubię także dobre kino i niestandardowa kuchnie. W dziale "Projekty" znajdują się odnośniki do ostatnich moich prac.</p>
+                        Nazywam się Piotr Szpanelewski mam 32 lat i mieszkam w Częstochowie. Z wykształcenia jestem energoelektronikiem. Dotychczas zajmowałem się serwisem informatycznym, moderacją sklepów online, tworzeniem stron. Od zawsze pasjonowały mnie komputery i wszystkie zagadnienia z nimi związane. W ostatnich latach ukierunkowałem się w stronę szeroko pojętej sieci www. Bardzo dobrze znam kod HTML i CSS oraz jego możliwości, nie jest mi obca biblioteka jQuery dla języka javaScript, świetnie czuje się pisząc w języku PHP, potrafię również obsługiwać bazy danych MySQL. Poznałem w większym bądź mniejszym stopniu programy do tworzenia i obsługi stron www miedzy innymi takie jak: Photoshop, Flash, Fireworks. Bardzo dobrze znam środowisko Windows i cały czas poznaje coraz popularniejsze środowisko Linux. Osobiście uważam że nie ma lepszego spełnienia zawodowego jeśli człowiek może utrzymać się ze swojej pasji. Moją jest właśnie pisanie stron www i programów opartych na języku PHP. Poza tym lubię także dobre kino i niestandardowa kuchnie. W dziale "Projekty" znajdują się odnośniki do ostatnich moich projektów.</p>
                         <br />
                         <p class="cn">Link do Curriculum vitae:</p>
                         <p class="cn"><a href="http://www.szpadlic.bdl.pl/PiotrSzpanelewskiCV.php" target="_blank" rel="next">Curriculum vitae</a></p>
@@ -97,10 +148,9 @@
                         <p class="ak">Program do wstawiania znaku wodnego w grafikę.</p>
                         <p class="cn"><a class="project-link" title="" target="_blank" href="http://www.znak.szpadlic.bdl.pl">www.znak.szpadlic.bdl.pl</a></p>
                     </div>
-                    <div id="links-right" class="content right hidden">Podgląd</div>
+                    <div id="links-right" class="content right hidden">Preview</div>
                     <div id="contact-left" class="content left hidden" >szpadlicho@gmail.com</div>
-                    <div id="contact-right" class="content right hidden" >szpadlicho@gmail.com</div>
-                    <div id="sound"></div>
+                    <div id="contact-right" class="content right hidden" >kom. 88895877</div>
                 </div>
             </article>
             <footer>
