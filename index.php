@@ -22,17 +22,11 @@
         <script type="text/javascript" src="js/scrypt.js"></script>
 
         <script type="text/javascript">
-            // $(document).ready( function() {
-                // $('.button').click(function(){
-                    // //$('#sound').append('<embed id="sound_player" src="sounds/fly.mp3" autostart="true" hidden="true"></embed>');
-                // });
-            // });
             $(document).ready(function() {
-                var audioElement = document.createElement('audio');
-                audioElement.setAttribute('src', 'sounds/fly.mp3');
                 $('.button').click(function() {
+                    var audioElement = document.createElement('audio');
+                    audioElement.setAttribute('src', 'sounds/fly.mp3');
                     audioElement.play();
-                    //audioElement.pause();
                 });
             });
 
