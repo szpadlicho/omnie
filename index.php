@@ -7,7 +7,7 @@
         <meta name="keywords" content="o mnie, strona autorska, Piotr Szpanelewski," />
         <meta name="author" content="Piotr Szpanelewski szpadlicho@gmail.com" />
         <meta name="dcterms.created" content="mon 9 dec 2013 09:00:00" />
-        <meta name="dcterms.modified" content="mon 10 dec 2013 09:52:17" />
+        <meta name="dcterms.modified" content="wed 19 nov 2014 19:29:17" />
         <meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"><!--stars-->
 
         <link title="deafult" type="text/css" rel="stylesheet" href="css/reset.css" />
