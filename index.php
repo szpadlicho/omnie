@@ -31,6 +31,7 @@
             });
 
         </script>
+        <meta name="google-site-verification" content="kpmkFaEGc2BJAvOMkXJaXUqrO1syteP3L7xBF1TOgfQ" />
     </head>
     <body onload="start()" onresize="resize()" onorientationchange="resize()" >
         <canvas id="starfield" style="background-color:#000000"></canvas>
@@ -68,7 +69,7 @@
                         <p>
                     </div>
                     <div id="about-right" class="content right hidden" >
-                        <img id="cv_gif" src="images/cv.gif" alt="Curriculum vitae foto" title="Curriculum vitae" />
+                        <img id="cv_gif" src="images/cv.jpg" alt="Curriculum vitae foto" title="Curriculum vitae" />
                     </div>
                     <div id="links-left" class="content left hidden" >
                         <h1>Projekty</h1>
@@ -77,7 +78,7 @@
                         <p class="cn"><a class="project-link" title="" target="_blank" href="http://www.atwork.szpadlic.bdl.pl">Sklep online</a></p>
                         <p class="ak">System zarządzania plikami na serwerze.</p>
                         <p>Stworzony dla potrzeb CMS-a, możliwość operacji na wielu plikach.</p>
-                        <p class="cn"><a class="project-link" title="" target="_blank" href="http://www.atwork.szpadlic.bdl.pl/cmd/cmd.php">Zarządzanie plikami</a></p>
+                        <p class="cn"><a class="project-link" title="" target="_blank" href="http://www.atwork.szpadlic.bdl.pl/cmd/index.php">Zarządzanie plikami</a></p>
                         <p class="ak">W pełni funkcjonalny poradnik jak Kupić i czym się kierować wybierając meble do salonu fryzjerskiego. Strona powstała przy współpracy z grafikiem.</p>
                         <p class="cn"><a class="project-link" title="" target="_blank" href="http://www.meblefryzjerskie.info">Poradnik Meble fryzjerskie</a></p>
                         <p class="ak">Strona firmy High Hair prezentująca posiadany asortyment. Strona powstała przy współpracy z grafikiem.</p>
