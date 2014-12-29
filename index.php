@@ -74,23 +74,21 @@
                     <div id="links-left" class="content left hidden" >
                         <h1>Projekty</h1>
                         <br />
-                        <p class="ak">System zarządzania sklepem CMS</p>
-                        <p class="cn"><a class="project-link" title="" target="_blank" href="http://www.atwork.szpadlic.bdl.pl">Sklep online</a></p>
-                        <p class="ak">System zarządzania plikami na serwerze.</p>
-                        <p>Stworzony dla potrzeb CMS-a, możliwość operacji na wielu plikach.</p>
-                        <p class="cn"><a class="project-link" title="" target="_blank" href="http://www.atwork.szpadlic.bdl.pl/cmd/index.php">Zarządzanie plikami</a></p>
-                        <p class="ak">W pełni funkcjonalny poradnik jak Kupić i czym się kierować wybierając meble do salonu fryzjerskiego. Strona powstała przy współpracy z grafikiem.</p>
-                        <p class="cn"><a class="project-link" title="" target="_blank" href="http://www.meblefryzjerskie.info">Poradnik Meble fryzjerskie</a></p>
-                        <p class="ak">Strona firmy High Hair prezentująca posiadany asortyment. Strona powstała przy współpracy z grafikiem.</p>
-                        <p class="cn"><a class="project-link" title="" target="_blank" href="http://www.highhair.pl">High Hair</a></p>
-                        <p class="ak">Współpracowałem przy tworzeniu bloga dla firmy HiHair. Strona powstała przy współpracy z grafikiem.</p>
-                        <p class="cn"><a class="project-link" title="" target="_blank" href="http://www.hihair.pl">HiHair.pl</a></p>
-                        <p class="ak">Program do stworzenia forum.</p>
+                        <p class="ak">System zarządzania treścią (CMS) dla sklepu: <span class="cn"><a class="project-link" title="" target="_blank" href="http://www.atwork.szpadlic.bdl.pl">Sklep online</a></span> (cały czas nad nim pracuję). Opcje administracyjne po kliknięciu w menu pozycji <a class="project-link" title="" target="_blank" href="http://www.atwork.szpadlic.bdl.pl/backroom">Zaplecze</a>.</p>
+                        <p></p>
+                        <p class="ak">System zarządzania plikami na serwerze. Stworzony dla potrzeb CMS-a, możliwość operacji na wielu plikach: <span class="cn"><a class="project-link" title="" target="_blank" href="http://www.atwork.szpadlic.bdl.pl/cmd/index.php">Zarządzanie plikami.</a></p>
+                        <p></p>
+                        <p class="ak">W pełni funkcjonalny poradnik jak Kupić i czym się kierować wybierając meble do salonu fryzjerskiego. Strona powstała przy współpracy z grafikiem: <span class="cn"><a class="project-link" title="" target="_blank" href="http://www.meblefryzjerskie.info">Poradnik Meble fryzjerskie</a></span></p>
+                        <p></p>
+                        <p class="ak">Strona firmy High Hair prezentująca posiadany asortyment. Strona powstała przy współpracy z grafikiem: <span class="cn"><a class="project-link" title="" target="_blank" href="http://www.highhair.pl">High Hair</a></span></p>
+                        <p></p>
+                        <p class="ak">Współpracowałem przy tworzeniu bloga dla firmy HiHair. Strona powstała przy współpracy z grafikiem: <span class="cn"><a class="project-link" title="" target="_blank" href="http://www.hihair.pl">HiHair.pl</a></span></p>
+                        <p></p>
+                        <p class="ak">Program do stworzenia forum: <span class="cn"><a class="project-link" title="" target="_blank" href="http://www.forum.szpadlic.bdl.pl">www.forum.szpadlic.bdl.pl</a></span></p>
                         <p>Opcje użytkownika po wpisaniu w pole login: czegokolwiek. </p>
                         <p>Opcje administracyjne po wpisaniu w pole login: admin. </p>
-                        <p class="cn"><a class="project-link" title="" target="_blank" href="http://www.forum.szpadlic.bdl.pl">www.forum.szpadlic.bdl.pl</a></p>
-                        <p class="ak">Program do wstawiania znaku wodnego w grafikę.</p>
-                        <p class="cn"><a class="project-link" title="" target="_blank" href="http://www.znak.szpadlic.bdl.pl">www.znak.szpadlic.bdl.pl</a></p>
+                        <p></p>
+                        <p class="ak">Program do wstawiania znaku wodnego w grafikę: <span class="cn"><a class="project-link" title="" target="_blank" href="http://www.znak.szpadlic.bdl.pl">www.znak.szpadlic.bdl.pl</a></span></p>
                     </div>
                     <div id="links-right" class="content right hidden">Podgląd</div>
                     <div id="contact-left" class="content left hidden" >szpadlicho@gmail.com</div>
