@@ -6,3 +6,6 @@ canvas{
     background-color:#000000;
     overflow:hidden
 }
+#starfield{
+    position: absolute;/* bug fix */
+}

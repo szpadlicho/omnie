@@ -32,6 +32,7 @@
 
         </script>
         <meta name="google-site-verification" content="kpmkFaEGc2BJAvOMkXJaXUqrO1syteP3L7xBF1TOgfQ" />
+        <style type="text/css"></style>
     </head>
     <body onload="start()" onresize="resize()" onorientationchange="resize()" >
         <canvas id="starfield" style="background-color:#000000"></canvas>
