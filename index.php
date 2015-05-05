@@ -13,7 +13,8 @@
         <link title="deafult" type="text/css" rel="stylesheet" href="css/reset.css" />
         <link title="deafult" type="text/css" rel="stylesheet" href="css/style.css" />
         <link title="deafult" type="text/css" rel="stylesheet" href="css/stars.css" />
-        <link title="deafult" type="text/css" rel="stylesheet" href="css/menu.css" />
+        <!--<link title="deafult" type="text/css" rel="stylesheet" href="css/menu.css" />-->
+        <link title="deafult" type="text/css" rel="stylesheet" href="css/menu_m.css" />
         <link title="deafult" type="text/css" rel="stylesheet" href="css/planets.css" />
         <link title="deafult" type="text/css" rel="stylesheet" href="css/content.css" />
         
@@ -29,6 +30,24 @@
                     audioElement.play();
                 });
             });
+            var sitesize = function () {
+                // checker
+                var htt = $(window).height();
+                var wtt = $(window).width();
+                if (wtt <= 420) {
+                    //alert('lol');
+                    $( '#about' ).after( '<p id="menu_breake"></p>' );
+                    $( '.planet-place-holder' ).css('margin-top','120px');
+                } else {
+                    $( '#menu_breake' ).remove();
+                }
+                if (wtt > 440) {
+                    $( '.planet-place-holder' ).css('margin-top','60px');
+                }
+            };
+            $(document).ready(sitesize);
+            $(document).load(sitesize);
+            $(window).resize(sitesize);
 
         </script>
         <meta name="google-site-verification" content="kpmkFaEGc2BJAvOMkXJaXUqrO1syteP3L7xBF1TOgfQ" />

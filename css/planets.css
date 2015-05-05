@@ -170,6 +170,7 @@
     background-repeat: no-repeat;
     vertical-align:middle; 
     position: absolute;
+    margin-top: 60px;
 }
 #sun{  
     width:20em;

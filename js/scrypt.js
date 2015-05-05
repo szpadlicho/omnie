@@ -6,7 +6,7 @@ var both = function () {
     var htt = $(window).height();
     var wtt = $(window).width();
     $('#count').css({'color':'white'});
-    //$('#count').text(wtt+'/'+htt);
+    $('#count').text(wtt+'/'+htt);
     // setup
     $( '#relative-holder' ).css({'width':wtt+'px','height':htt+'px'});
 };
@@ -38,8 +38,17 @@ $(document).ready(function(){
         $( '#earth' ).css({'left':'-20em', 'top':'-20em', 'width':'40em','height':'40em','transition':'300ms linear','animation-name':'none'});
         
         $( '#about-left' ).removeClass( 'hidden' ).addClass( 'show left-p' );
-        $( '#about-right' ).removeClass( 'hidden' ).addClass( 'show right-p' );
-        
+        //$( '#about-right' ).removeClass( 'hidden' ).addClass( 'show right-p' );
+        /*sizeset*/
+        if (wtt <= 420) {
+            $( 'show left-p' ).css({ '':'','':'' });
+            $( '.planet-place-holder' ).css('margin-top','120px');
+        } else {
+            $( '#menu_breake' ).remove();
+        }
+        if (wtt > 440) {
+            $( '.planet-place-holder' ).css('margin-top','60px');
+        }
     });
     $( '#links' ).click(function(){
         if ( $( '#sun' ).hasClass('paused') ) {

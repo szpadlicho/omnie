@@ -30,6 +30,7 @@ body {
 }
 .planet-place-holder{
     text-align:center;/*center sun*/
+    margin-top: 60px;
 }
 footer{
     position:fixed;

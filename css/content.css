@@ -42,6 +42,7 @@
     background-color:rgba(255, 255, 255, 0.1);
     color: orange;
     font-weight:bold;
+    margin-top: 70px;
 }
 .content.right{
     text-align:center;
@@ -90,4 +91,55 @@
     animation: content-show-right 600ms linear forwards reverse;
 }
 */
-
+/*mobile*/
+@media screen and (max-width: 320px) {
+    @-webkit-keyframes content-show-left {
+        0% { border:0em solid white; width:0; height:0; top:22em; left:20em; }
+        25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; left:20em; }
+        75% { border:0.3em solid white; width:25em; height:0.0em; top:22em; left:2em; }
+        100% { border:0.3em solid white; width:25em; height:28em; top:5em; left:2em; }
+    }
+    /*
+    @-moz-keyframes content-show-right {
+        0% { border:0em solid white; width:0; height:0; top:22em; right:20em; }
+        25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; right:20em; }
+        75% { border:0.3em solid white; width:35em; height:0.0em; top:22em; right:2em; }
+        100% { border:0.3em solid white; width:35em; height:41em; top:5em; right:2em; }
+    }
+    @keyframes content-show-left {
+        0% { border:0em solid white; width:0; height:0; top:22em; left:20em; }
+        25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; left:20em; }
+        75% { border:0.3em solid white; width:35em; height:0.0em; top:22em; left:2em; }
+        100% { border:0.3em solid white; width:35em; height:41em; top:5em; left:2em; }
+    }
+    @-webkit-keyframes content-show-right {
+        0% { border:0em solid white; width:0; height:0; top:22em; right:20em; }
+        25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; right:20em; }
+        75% { border:0.3em solid white; width:35em; height:0.0em; top:22em; right:2em; }
+        100% { border:0.3em solid white; width:35em; height:41em; top:5em; right:2em; }
+    }
+    */
+    @-moz-keyframes content-show-left {
+        0% { border:0em solid white; width:0; height:0; top:22em; left:20em; }
+        25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; left:20em; }
+        75% { border:0.3em solid white; width:25em; height:0.0em; top:22em; left:2em; margin-left: auto; margin-right: auto; }
+        100% { border:0.3em solid white; width:25em; height:28em; top:5em; left:2em; margin-left: auto; margin-right: auto; }
+    }
+    .content{
+        overflow-y:auto;
+        position:fixed;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content-place-holder{
+        text-align: center;
+    }
+    /*
+    @keyframes content-show-right {
+        0% { border:0em solid white; width:0; height:0; top:22em; right:20em; }
+        25% { border:0.3em solid white; width:0.1em; height:0.0em; top:22em; right:20em; }
+        75% { border:0.3em solid white; width:35em; height:0.0em; top:22em; right:2em; }
+        100% { border:0.3em solid white; width:35em; height:41em; top:5em; right:2em; }
+    }
+    */
+}
