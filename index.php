@@ -77,6 +77,7 @@
                         <div id="neptune" class="satellite"></div>
                     </div>
                 </div>
+                <!--
                 <div class="content-place-holder">
                     <div id="about-left" class="content left hidden" >
                         <h1>Witam</h1>
@@ -116,6 +117,7 @@
                     <div id="sound"></div>
                 </div>
             </article>
+            -->
             <footer>
                 <div id="count"></div>
             </footer>
